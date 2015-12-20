@@ -1,6 +1,5 @@
-$.drawer.open();
+$.index.open();
 
-function toggle(e) {
-    var fn = 'toggle' + e.source.title + 'Window';
-    $.drawer[fn]();
+function openHome() {
+	Alloy.createController('home').getView().open();
 }

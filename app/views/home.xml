@@ -1,0 +1,28 @@
+<Alloy>
+	<Widget id="drawer" src="nl.fokkezb.drawer">
+
+		<Window module="xp.ui" role="leftWindow">
+			<Label>I am left</Label>
+		</Window>
+
+		<NavigationWindow platform="ios" role="centerWindow">
+			<Window>
+				<LeftNavButton>
+					<Button onClick="toggle">Left</Button>
+				</LeftNavButton>
+				<Label>I am center</Label>
+				<RightNavButton>
+					<Button onClick="toggle">Right</Button>
+				</RightNavButton>
+			</Window>
+		</NavigationWindow>
+		<View platform="android" role="centerWindow">
+			<Label>I am center</Label>
+		</View>
+
+		<Window module="xp.ui" role="rightWindow">
+			<Label>I am right</Label>
+		</Window>
+
+	</Widget>
+</Alloy>
