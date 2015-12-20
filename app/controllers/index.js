@@ -1,5 +1,6 @@
-function doClick(e) {
-    alert($.label.text);
-}
+$.drawer.open();
 
-$.index.open();
+function toggle(e) {
+    var fn = 'toggle' + e.source.title + 'Window';
+    $.drawer[fn]();
+}
