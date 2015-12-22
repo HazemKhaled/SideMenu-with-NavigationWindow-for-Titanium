@@ -34,6 +34,9 @@ function WindowStack() {
 		} else {
 
 			if (drawer) {
+
+				_.extend(drawer.window, _.pick(_window, ['title', 'keepScreenOn', 'exitOnClose']));
+
 				drawer.setCenterWindow(_window);
 			} else {
 				_window.open();
