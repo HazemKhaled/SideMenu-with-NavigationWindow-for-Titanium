@@ -1,5 +1,5 @@
 <Alloy>
-	<Window module="xp.ui" title="I'm Home">
+	<Window module="xp.ui" title="I'm Page #1">
 		<Button onClick="openPage1">Open child</Button>
 	</Window>
 </Alloy>
