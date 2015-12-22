@@ -6,11 +6,8 @@
 					<View height="70"/>
 				</HeaderView>
 				<ListItem title="Home"/>
-				<ListItem title="Page 1"/>
-				<ListItem title="Page 2"/>
-				<ListItem title="Page 3"/>
-				<ListItem title="Page 4"/>
-				<ListItem title="Page 5"/>
+				<ListItem title="In center"/>
+				<ListItem title="Window"/>
 				<ListItem title="Exit"/>
 			</ListSection>
 			<FooterView>

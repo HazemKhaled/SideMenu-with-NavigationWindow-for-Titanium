@@ -1,7 +1,7 @@
 <Alloy>
-	<Window module="xp.ui" title="I'm Page #1">
+	<Window title="I'm Window">
 		<View height="Ti.UI.SIZE" layout="vertical">
-			<Label>Hi from Page 1, i'm here in teh center</Label>
+			<Label>Hi from regular window</Label>
 			<Button onClick="openPage1">Open child</Button>
 		</View>
 	</Window>

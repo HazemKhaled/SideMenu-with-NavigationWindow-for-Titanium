@@ -4,7 +4,7 @@ var args = arguments[0] || {},
 	direction = Ti.Locale.currentLanguage === 'ar' ? 'Right' : 'Left'
 
 function openPage1() {
-	Alloy.Globals.windowStack.open(Alloy.createController('page1').getView());
+	Alloy.Globals.windowStack.open(Alloy.createController('page').getView());
 }
 
 function toggle() {
