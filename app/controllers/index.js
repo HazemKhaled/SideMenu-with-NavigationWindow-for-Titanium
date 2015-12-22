@@ -1,8 +1,18 @@
-$.index.open();
+Alloy.Globals.windowStack = require('WindowStack').createWindowStack();
+//Alloy.Globals.windowStack.setNavigationWindow($.centerNavigationWindow);
 
-function openHome() {
-	// without open, drawer has to be opened after setting roles
-	Alloy.createController('home_container').getView();
-}
+Alloy.Globals.windowStack.open(Alloy.createController('home').getView(), $.drawer);
 
-setTimeout(openHome, 1000);
+// Drawer come from right or left
+var direction = Ti.Locale.currentLanguage === 'ar' ? 'Right' : 'Left'
+
+// set side menu view
+$.drawer['set' + direction + 'Window'](Alloy.createController('sidemenu').getView());
+
+// Add drawer to global for common use
+Alloy.Globals.drawer = $.drawer;
+$.drawer.addEventListener('close', function() {
+	Alloy.Globals.drawer = null;
+});
+
+$.drawer.open();

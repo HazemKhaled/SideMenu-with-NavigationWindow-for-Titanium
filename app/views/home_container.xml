@@ -1,5 +1,0 @@
-<Alloy>
-	<Widget id="drawer" src="nl.fokkezb.drawer">
-		<Require platform="android" role="centerWindow" src="home"/>
-	</Widget>
-</Alloy>

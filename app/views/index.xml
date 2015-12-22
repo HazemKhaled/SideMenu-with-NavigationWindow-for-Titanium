@@ -1,5 +1,3 @@
 <Alloy>
-	<Window>
-		<Button onClick="openHome">Open home</Button>
-	</Window>
+	<Widget id="drawer" src="nl.fokkezb.drawer" />
 </Alloy>
