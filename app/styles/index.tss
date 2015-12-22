@@ -4,5 +4,5 @@
 	leftDrawerWidth: 200,
 	rightDrawerWidth: 200,
 	// use DrawerLayout for Android
-	drawerLayout: false
+	drawerLayout: true
 }

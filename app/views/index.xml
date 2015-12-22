@@ -1,3 +1,7 @@
 <Alloy>
-	<Widget id="drawer" src="nl.fokkezb.drawer" />
+	<Widget id="drawer" src="nl.fokkezb.drawer">
+		<View platform="android" role="leftWindow"/>
+		<View platform="android" role="centerWindow"/>
+		<View platform="android" role="rightWindow"/>
+	</Widget>
 </Alloy>
