@@ -50,6 +50,7 @@
 	</mobileweb>
 	<modules>
     <module platform="android">com.tripvi.drawerlayout</module>
+    <module platform="android">dk.napp.drawer</module>
     <module platform="iphone" versio>dk.napp.drawer</module>
   </modules>
 	<deployment-targets>
