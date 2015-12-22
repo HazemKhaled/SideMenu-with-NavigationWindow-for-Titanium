@@ -1,4 +1,4 @@
-var direction = Ti.Locale.currentLanguage === 'ar' ? 'Right' : 'Left'
+var direction = Ti.Locale.currentLanguage === 'ar' ? 'Right' : 'Left';
 
 function onItemClick(e) {
 	switch (e.itemIndex) {

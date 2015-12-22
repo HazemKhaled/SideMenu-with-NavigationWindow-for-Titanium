@@ -7,7 +7,7 @@ function WindowStack() {
 
 	this.setNavigationWindow = function(_navigationWindow) {
 		navigationWindow = _navigationWindow;
-	}
+	};
 
 	this.open = function(_window, drawer) {
 
@@ -53,8 +53,6 @@ function WindowStack() {
 
 		if (OS_IOS) {
 			navigationWindow.closeWindow(_window);
-		} else if (OS_MOBILEWEB) {
-			navigationWindow.close(_window);
 		} else {
 			_window.close();
 		}
@@ -68,7 +66,7 @@ function WindowStack() {
 
 	this.home = function() {
 		var lastLength = windows.length,
-			i = 0;
+			interval;
 
 		Alloy.Globals.homeInterval = interval = setInterval(function() {
 			if (lastLength === windows.length) {

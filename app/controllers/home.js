@@ -1,7 +1,5 @@
-var args = arguments[0] || {},
-
-	// Drawer come from right or left
-	direction = Ti.Locale.currentLanguage === 'ar' ? 'Right' : 'Left'
+// Drawer come from right or left
+var direction = Ti.Locale.currentLanguage === 'ar' ? 'Right' : 'Left';
 
 function openPage1() {
 	Alloy.Globals.windowStack.open(Alloy.createController('page').getView());
@@ -21,6 +19,4 @@ if (OS_IOS) {
 
 	$.home[direction + 'NavButton'] = navButton;
 
-} else {
-	//TODO: Android drawer
 }

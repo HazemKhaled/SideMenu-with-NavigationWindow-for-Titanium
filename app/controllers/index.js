@@ -4,7 +4,7 @@ Alloy.Globals.windowStack = require('WindowStack').createWindowStack();
 Alloy.Globals.windowStack.open(Alloy.createController('home').getView(), $.drawer);
 
 // Drawer come from right or left
-var direction = Ti.Locale.currentLanguage === 'ar' ? 'Right' : 'Left'
+var direction = Ti.Locale.currentLanguage === 'ar' ? 'Right' : 'Left';
 
 // set side menu view
 $.drawer['set' + direction + 'Window'](Alloy.createController('sidemenu').getView());

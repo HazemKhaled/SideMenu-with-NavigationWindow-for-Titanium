@@ -1,0 +1,13 @@
+{
+  "camelcase": true,
+  "curly": true,
+  "newcap": true,
+  "noempty": true,
+  "plusplus": false,
+  "quotmark": false,
+  "undef": true,
+  "unused": true,
+  "strict": false,
+  "node": true,
+  "predef": ["Ti", "Alloy", "Titanium", "require", "$", "L", "OS_IOS", "OS_ANDROID", "ENV_DEV", "setTimeout", "alert", "$model", "exports", "module", "_"]
+}
