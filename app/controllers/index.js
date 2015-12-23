@@ -1,5 +1,4 @@
 Alloy.Globals.windowStack = require('WindowStack').createWindowStack();
-//Alloy.Globals.windowStack.setNavigationWindow($.centerNavigationWindow);
 
 Alloy.Globals.windowStack.open(Alloy.createController('home').getView(), $.drawer);
 
