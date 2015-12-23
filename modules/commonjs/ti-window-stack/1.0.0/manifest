@@ -3,8 +3,8 @@ description: Manage iPhone and Android windows in same code base
 author: Hazem Khaled <hazem.khaled@gmail.com> (http://about.me/hazemkhaled)
 license: MIT
 copyright: Copyright © 2015 Hazem Khaled
-name: TiWindowStack
-moduleid: TiWindowStack
+name: ti-window-stack
+moduleid: ti-window-stack
 guid: 650ca435-0741-f46a-042f-e2f5f2ff0ae6
 platform: commonjs
 minsdk: 3.2.0.GA

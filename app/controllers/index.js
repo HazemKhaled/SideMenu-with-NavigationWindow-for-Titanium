@@ -1,4 +1,4 @@
-Alloy.Globals.windowStack = require('TiWindowStack').createWindowStack();
+Alloy.Globals.windowStack = require('ti-window-stack').createWindowStack();
 
 Alloy.Globals.windowStack.open(Alloy.createController('home').getView(), $.drawer);
 
