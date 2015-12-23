@@ -1,6 +1,8 @@
 # Simple example application side menu with window stack manager
 Simply i'm using [Fokke Drawer Widget](http://gitt.io/component/nl.fokkezb.drawer) over [NappDrawer](http://gitt.io/component/dk.napp.drawer) or [DrawerLayout](https://github.com/manumaticx/Ti.DrawerLayout) modules with my WindowStack CommonJS module in easy way
 
+![gif](https://raw.githubusercontent.com/hazemkhaled/SideMenu-with-NavigationWindow-for-Titanium/master/screens/iphone.gif) ![gif](https://raw.githubusercontent.com/hazemkhaled/SideMenu-with-NavigationWindow-for-Titanium/master/screens/android.gif)
+
 ## Tutorial
 Sooooon
 
