@@ -12,11 +12,9 @@ function WindowStack() {
 
 	this.open = function(_window, drawer) {
 
-		windows.push(_window);
-
 		if (OS_IOS) {
 
-			// Create navigationWindow if we don't have
+			// Create navigationWindow if we don't have, or if we have side menu
 			if (navigationWindow === null || drawer) {
 				navigationWindow = Ti.UI.iOS.createNavigationWindow({
 					window: _window
@@ -27,20 +25,35 @@ function WindowStack() {
 				} else {
 					navigationWindow.open();
 				}
+
+				// Reset our local stack refrance
+				windows = [];
 			} else {
 
 				// Or just push new window to the stack
 				navigationWindow.openWindow(_window);
+
+				// Add this window to my stack refrance
+				windows.push(_window);
 			}
 		} else {
 
 			if (drawer) {
-
+				// Extend some properties to drawer containner
 				_.extend(drawer.window, _.pick(_window, ['title', 'keepScreenOn', 'exitOnClose']));
 
+				// Since android center item is view not a window, we have to fire it ourselves
+				_window.fireEvent('open');
+
 				drawer.setCenterWindow(_window);
+
+				// Reset our local stack refrance
+				windows = [];
 			} else {
 				_window.open();
+
+				// Add this window to my stack refrance
+				windows.push(_window);
 			}
 		}
 
@@ -76,7 +89,10 @@ function WindowStack() {
 				Alloy.Globals.windowStack.back();
 				lastLength--;
 
-				if ((OS_IOS && lastLength === 1) || (OS_ANDROID && lastLength === 0)) {
+				if (lastLength === 0 ||
+					// Center window is actually view on Android
+					windows[lastLength - 1].apiName === 'View') {
+
 					clearInterval(Alloy.Globals.homeInterval);
 				}
 			}
