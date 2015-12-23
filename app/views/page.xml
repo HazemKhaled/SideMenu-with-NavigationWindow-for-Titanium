@@ -4,5 +4,9 @@
 			<Label>Hi from regular window</Label>
 			<Button onClick="openPage1">Open child</Button>
 		</View>
+
+		<View height="Ti.UI.SIZE" layout="vertical" bottom="0">
+			<Button onClick="Alloy.Globals.windowStack.back">Back</Button>
+		</View>
 	</Window>
 </Alloy>

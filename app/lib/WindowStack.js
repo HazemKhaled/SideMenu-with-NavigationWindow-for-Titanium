@@ -3,7 +3,8 @@ function WindowStack() {
 	// The navigation object for iOS
 	var navigationWindow = null,
 		// Windows array for history pepuse
-		windows = [];
+		windows = [],
+		that = this;
 
 	this.setNavigationWindow = function(_navigationWindow) {
 		navigationWindow = _navigationWindow;
@@ -61,7 +62,9 @@ function WindowStack() {
 	this.back = function() {
 		// Get last window in the stack
 		var _window = _.last(windows);
-		this.close(_window);
+
+		// In case assign this function directly to UI item, this will pass to the UI item it self, better use that
+		that.close(_window);
 	};
 
 	this.home = function() {
