@@ -1,4 +1,4 @@
-version: 1.0.0
+version: 1.0.1
 description: Manage iPhone and Android windows in same code base
 author: Hazem Khaled <hazem.khaled@gmail.com> (http://about.me/hazemkhaled)
 license: MIT
