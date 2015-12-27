@@ -2,7 +2,7 @@
 	<Window module="xp.ui">
 		<ListView onItemclick="onItemClick">
 			<ListSection>
-				<HeaderView>
+				<HeaderView platform="ios">
 					<View height="70"/>
 				</HeaderView>
 				<ListItem title="Home"/>
