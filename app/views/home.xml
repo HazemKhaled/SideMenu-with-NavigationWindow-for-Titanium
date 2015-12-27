@@ -1,12 +1,5 @@
 <Alloy>
 	<Window module="xp.ui" title="I'm Home">
-		<Menu>
-			<MenuItem showAsAction="Ti.Android.SHOW_AS_ACTION_ALWAYS" title="Search">
-				<ActionView>
-					<SearchView hintText="Type Something" ns="Ti.UI.Android"/>
-				</ActionView>
-			</MenuItem>
-		</Menu>
 		<View height="Ti.UI.SIZE" layout="vertical">
 			<Label>Hi from home</Label>
 			<Button onClick="openPage1">Open child</Button>
